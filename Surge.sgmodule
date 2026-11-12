@@ -1,11 +1,16 @@
-#!name=Surge广告拦截
-#!desc=通过Surge模块拦截常见广告与统计域名；仅使用内置REJECT策略，不包含机场节点或订阅信息
+#!name=顺畅网络增强规则
+#!desc=适配顺畅网络托管配置，使用现有 Proxy 策略；增强 Gemini、ChatGPT、Siri ChatGPT、Telegram、海外媒体及广告拦截
+#!category=自定义
 [Rule]
-DOMAIN-SUFFIX,doubleclick.net,REJECT
-DOMAIN-SUFFIX,googlesyndication.com,REJECT
-DOMAIN-SUFFIX,googleadservices.com,REJECT
-DOMAIN-SUFFIX,adservice.google.com,REJECT
-DOMAIN-SUFFIX,app-measurement.com,REJECT
-DOMAIN-SUFFIX,adsystem.com,REJECT
-DOMAIN-SUFFIX,umeng.com,REJECT
-DOMAIN-SUFFIX,umengcloud.com,REJECT
+# AI services
+RULE-SET,https://raw.githubusercontent.com/TAngxyxn/suge0.1/main/AI.list,Proxy
+# Siri ChatGPT relay must precede generic Apple DIRECT rules
+DOMAIN,apple-relay.apple.com,Proxy
+# Telegram
+RULE-SET,https://raw.githubusercontent.com/TAngxyxn/suge0.1/main/Telegram.list,Proxy
+# Google services
+RULE-SET,https://raw.githubusercontent.com/TAngxyxn/suge0.1/main/Google.list,Proxy
+# Overseas media
+RULE-SET,https://raw.githubusercontent.com/TAngxyxn/suge0.1/main/Media.list,Proxy
+# Common ads
+RULE-SET,https://raw.githubusercontent.com/TAngxyxn/suge0.1/main/Ads.list,REJECT
