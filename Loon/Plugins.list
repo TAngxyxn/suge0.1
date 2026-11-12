@@ -1,3 +1,28 @@
 # Loon 插件清单
-# 格式：一行一个插件 URL；确认来源和用途后再添加。
-# 不要把机场订阅、账号密码、MITM 私钥写入此文件。
+# 一行一个插件地址；导入前建议先核对插件作者、更新时间和权限。
+# 本清单不包含机场订阅凭据或 MITM 私钥。
+
+https://kelee.one/Tool/Loon/Lpx/Remove_ads_by_keli.lpx
+https://raw.githubusercontent.com/Thelongdarkorg/loon-plugins/main/ai_auto_node.plugin
+https://raw.githubusercontent.com/Thelongdarkorg/loon-plugins/main/chinamobile_splash_ad_block.plugin
+https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/WexinMiniPrograms_Remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/Weixin_external_links_unlock.lpx
+https://kelee.one/Tool/Loon/Lpx/Weixin_Official_Accounts_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/NeteaseCloudMusic_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/MailMaster_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/PinDuoDuo_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/MojiWeather_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/JDWaimai_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/JD_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/Bilibili_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/BaiduNetDisk_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/YouTubeSubtitlesTranslation.lpx
+https://kelee.one/Tool/Loon/Lpx/YouTube_remove_ads.lpx
+https://kelee.one/Tool/Loon/Lpx/TelegramRedirect.lpx
+https://kelee.one/Tool/Loon/Lpx/Google.lpx
+https://kelee.one/Tool/Loon/Lpx/AppleWeatherEnhancer.lpx
+https://kelee.one/Tool/Loon/Lpx/BlockAdvertisers.lpx
+https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx
