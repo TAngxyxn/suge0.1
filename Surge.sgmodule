@@ -1,0 +1,60 @@
+#!name=Surge远程分流规则
+#!desc=适配当前策略组：AI与常用海外服务分流，常见广告域名拦截；不包含任何机场节点或订阅信息
+#!category=规则
+[Rule]
+# AI 服务
+DOMAIN-SUFFIX,openai.com,节点选择
+DOMAIN-SUFFIX,chatgpt.com,节点选择
+DOMAIN-SUFFIX,oaistatic.com,节点选择
+DOMAIN-SUFFIX,oaiusercontent.com,节点选择
+DOMAIN-SUFFIX,anthropic.com,节点选择
+DOMAIN-SUFFIX,claude.ai,节点选择
+DOMAIN-SUFFIX,claudeusercontent.com,节点选择
+DOMAIN-SUFFIX,gemini.google.com,节点选择
+DOMAIN-SUFFIX,ai.google.dev,节点选择
+DOMAIN-SUFFIX, generativelanguage.googleapis.com,节点选择
+
+# Telegram
+DOMAIN-SUFFIX,telegram.org,电报信息
+DOMAIN-SUFFIX,t.me,电报信息
+DOMAIN-SUFFIX,telegra.ph,电报信息
+DOMAIN-SUFFIX,telegram.me,电报信息
+
+# Microsoft
+DOMAIN-SUFFIX,microsoft.com,微软服务
+DOMAIN-SUFFIX,live.com,微软服务
+DOMAIN-SUFFIX,office.com,微软服务
+DOMAIN-SUFFIX,office.net,微软服务
+DOMAIN-SUFFIX,outlook.com,微软服务
+DOMAIN-SUFFIX,windows.com,微软服务
+DOMAIN-SUFFIX,msftconnecttest.com,微软服务
+
+# Apple
+DOMAIN-SUFFIX,apple.com,苹果服务
+DOMAIN-SUFFIX,icloud.com,苹果服务
+DOMAIN-SUFFIX,icloud-content.com,苹果服务
+DOMAIN-SUFFIX,apple-cloudkit.com,苹果服务
+DOMAIN-SUFFIX,mzstatic.com,苹果服务
+DOMAIN-SUFFIX,itunes.apple.com,苹果服务
+
+# Google / FCM
+DOMAIN-SUFFIX,google.com,谷歌FCM
+DOMAIN-SUFFIX,googleapis.com,谷歌FCM
+DOMAIN-SUFFIX,gstatic.com,谷歌FCM
+DOMAIN-SUFFIX,googleusercontent.com,谷歌FCM
+DOMAIN-SUFFIX,googlevideo.com,国外媒体
+DOMAIN-SUFFIX,youtube.com,国外媒体
+DOMAIN-SUFFIX,ytimg.com,国外媒体
+DOMAIN-SUFFIX,netflix.com,国外媒体
+DOMAIN-SUFFIX,nflxvideo.net,国外媒体
+DOMAIN-SUFFIX,spotify.com,国外媒体
+
+# 常见广告域名
+DOMAIN-SUFFIX,doubleclick.net,全球拦截
+DOMAIN-SUFFIX,googlesyndication.com,全球拦截
+DOMAIN-SUFFIX,googleadservices.com,全球拦截
+DOMAIN-SUFFIX,adservice.google.com,全球拦截
+DOMAIN-SUFFIX,app-measurement.com,全球拦截
+DOMAIN-SUFFIX,adsystem.com,全球拦截
+DOMAIN-SUFFIX,umeng.com,全球拦截
+DOMAIN-SUFFIX,umengcloud.com,全球拦截
