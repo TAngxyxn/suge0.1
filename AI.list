@@ -1,13 +1,13 @@
+# OpenAI / ChatGPT
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
+# Anthropic / Claude
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claudeusercontent.com
+# Google Gemini
 DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,ai.google.dev
 DOMAIN-SUFFIX,generativelanguage.googleapis.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-DOMAIN,oauth2.googleapis.com
-DOMAIN,accounts.google.com
