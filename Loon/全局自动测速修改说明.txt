@@ -1,0 +1,36 @@
+Loon 全局自动测速修改片段
+=========================
+
+目标：选择 A —— 海外/未命中规则的流量，交给全部节点自动测速；保留 WCloud、TAG、顺畅三条机场订阅和现有远程规则/插件。
+
+只改当前本机正在使用的配置文件，不要导入一个新的空白模板。
+
+1. 在 [Proxy Group] 中找到原来的：
+自动优选 = select,全部节点,url = http://www.gstatic.com/generate_204
+
+替换为：
+自动优选 = url-test,全部节点,url = http://www.gstatic.com/generate_204,interval = 300,tolerance = 50
+
+含义：每 300 秒检测一次全部节点；延迟差距在容差范围内时避免频繁切换。
+
+2. 在 [Rule] 中找到原来的最终规则：
+FINAL,美国自动优选
+
+替换为：
+FINAL,自动优选
+
+注意：FINAL 必须保持在 [Rule] 最后一条规则；不要改动它上面的国内直连、AI、Telegram、Apple 等分流规则。
+
+3. 不要改动以下部分：
+- [Remote Proxy] 中 mesl（WCloud）、TAG、顺畅三条订阅及其 enabled 状态
+- [Remote Filter]
+- [Remote Rule]
+- [Plugin]
+- [MITM] 中现有证书设置
+
+4. 保存前先复制一份当前配置作为备份。保存后在 Loon 的策略页确认“自动优选”类型显示为 url-test，并观察是否自动切换节点。
+
+重要：
+- 这个片段不是完整配置文件，不要作为配置文件单独导入。
+- 不要把机场订阅 URL、节点凭据或 MITM 私钥上传到公开 GitHub。
+- 自动测速只依据测试 URL 的连通/响应情况；个别服务仍由各自远程规则指定策略。
