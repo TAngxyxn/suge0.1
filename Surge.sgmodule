@@ -1,5 +1,5 @@
 #!name=Surge远程分流规则
-#!desc=适配当前策略组：AI与常用海外服务分流，常见广告域名拦截；不包含任何机场节点或订阅信息
+#!desc=适配当前策略组：AI与常用海外服务分流，常见广告域名拦截；不包含机场节点或订阅信息
 #!category=规则
 [Rule]
 # AI 服务
@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,claude.ai,节点选择
 DOMAIN-SUFFIX,claudeusercontent.com,节点选择
 DOMAIN-SUFFIX,gemini.google.com,节点选择
 DOMAIN-SUFFIX,ai.google.dev,节点选择
-DOMAIN-SUFFIX, generativelanguage.googleapis.com,节点选择
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,节点选择
 
 # Telegram
 DOMAIN-SUFFIX,telegram.org,电报信息
